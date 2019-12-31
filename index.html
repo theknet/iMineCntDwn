@@ -311,7 +311,7 @@ html, body {
 <script type="text/javascript">
 
 function startTimer() {
-    const length = 26;
+    const length = 25;
     const countdown = document.getElementById('countdown');
     const prototype = document.getElementById('prototype');
 
@@ -323,7 +323,7 @@ function startTimer() {
 
     setInterval(() => {
         const now = new Date().getTime();
-        const decDiff = 1609459200 - (now / 1000);
+        const decDiff = 1608692150 - (now / 1000);
         let diff = dec2Bin(decDiff);
 
         document.getElementById('banner').style.filter = 'blur(' + decDiff / 10000 + 'px)';
